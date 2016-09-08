@@ -1,0 +1,7 @@
+machine:
+  java:
+    version: openjdk8
+
+test:
+  override:
+    - javac lab04-ticket-machine/TicketMachine.java
