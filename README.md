@@ -7,7 +7,7 @@ All of these questions deal with the ticket machine example bundled in this repo
 public void setPrice(int cost)
 ```
 
-## Complete the body of the setPrice method so that it assigns the value of its parameter to the price field. Write your new method in the `lab04-ticket-machine`.
+## Complete the body of the `setPrice` method so that it assigns the value of its parameter to the price field. Write your new method in the `lab04-ticket-machine`.
 
 ## Complete the body of the following method, whose purpose is to add the value of its parameter to a field named `score`.
 ```
