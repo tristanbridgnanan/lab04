@@ -6,7 +6,6 @@ All of these questions deal with the ticket machine example bundled in this repo
 ```
 public void setPrice(int cost)
 ```
--You can tell that it is a method due to the fact that there is no return value. It has "void" and a constructor would need a return.
 
 ## Complete the body of the `setPrice` method so that it assigns the value of its parameter to the price field. Write your new method in the `lab04-ticket-machine`.
 
@@ -17,11 +16,10 @@ public void setPrice(int cost)
  */
 public void increase(int points)
 {
-  score =  score + points;
+  ...
 }
 ```
 ## Is the `increase` method in the previous question a mutator? If so, how could you demonstrate this?
-- Yes it is a mutator because it is changing the value, you can do this by printing the two methods and obvserving the difference in values.
 
 ## Complete the following method, whose purpose is to subtract the value of its parameter from a field named `price`. Add your new method to the `lab04-ticket-machine`.
 ```
@@ -30,7 +28,7 @@ public void increase(int points)
  */
 public void discount(int amount)
 {
-  amount = price - amount;
+  ...
 }
 ```
 
@@ -38,7 +36,6 @@ public void discount(int amount)
 ```
 System.out.println("My cat has green eyes.");
 ```
--It will say "My cat has green eyes"
 
 ## Add a method called `prompt` to the `TicketMachine` class in the `lab04-ticket-machine`. This should have a `void` return type and take no parameters. The body of the method should print the following single line of output: 
 ```
@@ -49,16 +46,13 @@ Please insert the correct amount of money.
 ```
 System.out.println("# " + "price" + " cents.");
 ```
--It says "price cents"
 
 ## What would be printed here?
 ```
 System.out.println("# price cents.");
 ```
-- It says "price cents"
 
 ## Could either of the previous two versions be used to show the price of tickets in different ticket machines? Explain your answer.
-No, because the word "price" reflects a word rather than a variable because it is a string rather than an int.
 
 ## Add a `showPrice` method to the `TicketMachine` class in the `lab04-ticket-machine`. This should have a void return type and take no parameters. The body of the method should print (here `xyz` should be replaced by the value held in the `price` field when the method is called):
 ```
@@ -67,13 +61,9 @@ The price of a ticket is xyz cents.
 
 
 ## Create two ticket machines with differently priced tickets. Do calls to their showPrice methods show the same output, or different? How do you explain this effect?
-They show different outputs because the variable "price" is different in both machines
-
 
 ## Modify the constructor of `TicketMachine` in the `lab04-ticket-machine` so that it no longer has a parameter. Instead, the price of tickets should be fixed at 1,000 cents. What effect does this have when you construct ticket-machine objects within BlueJ?
-- the price of the ticket is going to be fixed at 1000 cents and it wont allow you to enter your own value. 
 
 ## Give the class two constructors. One should take a single parameter that specifies the price, and the other should take no parameter and set the price to be a default value of your choosing. Test your implementation by creating machines via the two different constructors.
 
 ## Implement a method, `empty`, that simulates the effect of removing all money from the machine. This method should have a `void` return type, and its body should simply set the `total` field to zero. Does this method need to take any parameters? Test your method by creating a machine, inserting some money, printing some tickets, checking the total, and then emptying the machine. Is the `empty` method a mutator or an accessor?
-- the method needs no parameters and is a mutator because it is changing a value.
